@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		696C0630249A5E6800606E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696C062E249A5E6800606E62 /* Main.storyboard */; };
 		696C0632249A5E6A00606E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696C0631249A5E6A00606E62 /* Assets.xcassets */; };
 		696C0635249A5E6A00606E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696C0633249A5E6A00606E62 /* LaunchScreen.storyboard */; };
+		696C063F249A64F800606E62 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C063E249A64F800606E62 /* Animation.swift */; };
 		A19536C0973E493014E99A33 /* Pods_vitata_HW2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556EC4636459C9801E459C28 /* Pods_vitata_HW2_9.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		696C0631249A5E6A00606E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		696C0634249A5E6A00606E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		696C0636249A5E6A00606E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696C063E249A64F800606E62 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		7F3854F4EDEE89368C1B8390 /* Pods-vitata_HW2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vitata_HW2.9.release.xcconfig"; path = "Target Support Files/Pods-vitata_HW2.9/Pods-vitata_HW2.9.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,15 +73,56 @@
 		696C0627249A5E6800606E62 /* vitata_HW2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				696C0628249A5E6800606E62 /* AppDelegate.swift */,
-				696C062A249A5E6800606E62 /* SceneDelegate.swift */,
-				696C062C249A5E6800606E62 /* ViewController.swift */,
-				696C062E249A5E6800606E62 /* Main.storyboard */,
-				696C0631249A5E6A00606E62 /* Assets.xcassets */,
-				696C0633249A5E6A00606E62 /* LaunchScreen.storyboard */,
-				696C0636249A5E6A00606E62 /* Info.plist */,
+				696C0644249A6D0600606E62 /* ViewControllers */,
+				696C0640249A6CAF00606E62 /* Models */,
+				696C0643249A6CF800606E62 /* Storyboards */,
+				696C0642249A6CEB00606E62 /* Resource */,
+				696C0641249A6CC300606E62 /* SupportingFiles */,
 			);
 			path = vitata_HW2.9;
+			sourceTree = "<group>";
+		};
+		696C0640249A6CAF00606E62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				696C063E249A64F800606E62 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		696C0641249A6CC300606E62 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				696C0628249A5E6800606E62 /* AppDelegate.swift */,
+				696C062A249A5E6800606E62 /* SceneDelegate.swift */,
+				696C0636249A5E6A00606E62 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		696C0642249A6CEB00606E62 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				696C0631249A5E6A00606E62 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		696C0643249A6CF800606E62 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				696C062E249A5E6800606E62 /* Main.storyboard */,
+				696C0633249A5E6A00606E62 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		696C0644249A6D0600606E62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696C062C249A5E6800606E62 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		BFBF42DD8C26B919011D109A /* Pods */ = {
@@ -88,7 +131,6 @@
 				0B6674CA638B3B09ADC157FD /* Pods-vitata_HW2.9.debug.xcconfig */,
 				7F3854F4EDEE89368C1B8390 /* Pods-vitata_HW2.9.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +251,7 @@
 			files = (
 				696C062D249A5E6800606E62 /* ViewController.swift in Sources */,
 				696C0629249A5E6800606E62 /* AppDelegate.swift in Sources */,
+				696C063F249A64F800606E62 /* Animation.swift in Sources */,
 				696C062B249A5E6800606E62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZC579X3KH;
-				INFOPLIST_FILE = vitata_HW2.9/Info.plist;
+				INFOPLIST_FILE = vitata_HW2.9/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZC579X3KH;
-				INFOPLIST_FILE = vitata_HW2.9/Info.plist;
+				INFOPLIST_FILE = vitata_HW2.9/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
